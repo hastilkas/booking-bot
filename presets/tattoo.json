@@ -1,0 +1,41 @@
+{
+  "id": "tattoo",
+  "name": "Ink Room Tattoo",
+  "emoji": "🖋",
+  "description": "Авторские эскизы, стерильность как в операционной, консультация бесплатно.",
+  "address": "пр. Мира, 45, 2 этаж",
+  "phone": "+7 (999) 222-33-44",
+  "currency": "₽",
+  "slot_step_minutes": 60,
+  "services": [
+    {"id": "consult", "title": "Консультация и эскиз", "duration": 60, "price": 0},
+    {"id": "mini", "title": "Мини-тату (до 5 см)", "duration": 60, "price": 4000},
+    {"id": "medium", "title": "Тату до 15 см", "duration": 180, "price": 12000},
+    {"id": "session", "title": "Сеанс крупной работы", "duration": 300, "price": 20000},
+    {"id": "piercing", "title": "Пирсинг", "duration": 60, "price": 2500}
+  ],
+  "masters": [
+    {
+      "id": "kira",
+      "name": "Кира",
+      "about": "Графика, дотворк, тонкие линии",
+      "services": ["consult", "mini", "medium", "session"],
+      "schedule": {
+        "tue": ["12:00", "21:00"], "wed": ["12:00", "21:00"], "thu": ["12:00", "21:00"],
+        "fri": ["12:00", "21:00"], "sat": ["12:00", "19:00"]
+      },
+      "breaks": []
+    },
+    {
+      "id": "mark",
+      "name": "Марк",
+      "about": "Реализм и цветные работы, пирсинг",
+      "services": ["consult", "medium", "session", "piercing"],
+      "schedule": {
+        "mon": ["11:00", "20:00"], "tue": ["11:00", "20:00"],
+        "sat": ["11:00", "20:00"], "sun": ["11:00", "20:00"]
+      },
+      "breaks": [["15:00", "16:00"]]
+    }
+  ]
+}
